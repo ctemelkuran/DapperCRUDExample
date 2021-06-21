@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DapperCRUDExample
 {
@@ -68,10 +69,9 @@ namespace DapperCRUDExample
                     param.Add("@Rating", float.Parse(txtRating.Text));
                     param.Add("@MovieLength", float.Parse(txtLength.Text));
 
-                    
+
                     //connection.Execute("INSERT INTO MovieGenres(MovieId,GenreId) VALUES(Id, genreId) ");
-
-
+                    
 
                     connection.Execute("Movie_InsertOrEdit", param, commandType: CommandType.StoredProcedure);
                     if (Id == 0)
@@ -82,6 +82,13 @@ namespace DapperCRUDExample
                     {
                         MessageBox.Show(txtMovieTitle.Text + " updated successfully!");
                     }
+                    string movieTitle = txtMovieTitle.Text;
+                    string selectMovieId = "SELECT Id FROM Movies WHERE Title = '" + movieTitle + "';";
+                    var selectedMovieId = connection.Query<Movie>(selectMovieId).FirstOrDefault();
+                    
+                    string insertToMovieGenres = "INSERT INTO MovieGenres(MovieId, GenreId) VALUES ( " + selectedMovieId.Id + "," + genreId + ");";
+                    
+                    connection.Execute(insertToMovieGenres);
                     FillMovieDataGridView();
                     Clear();
                 }
