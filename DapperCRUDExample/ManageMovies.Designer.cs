@@ -29,6 +29,7 @@ namespace DapperCRUDExample
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageMovies));
             this.btnDirectorSearch = new System.Windows.Forms.Button();
             this.txtMovieSearch = new System.Windows.Forms.TextBox();
             this.dgvMovies = new System.Windows.Forms.DataGridView();
@@ -48,6 +49,7 @@ namespace DapperCRUDExample
             this.cmbxGenres = new System.Windows.Forms.ComboBox();
             this.cmbxDirectors = new System.Windows.Forms.ComboBox();
             this.btnGoToHome = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,24 +95,27 @@ namespace DapperCRUDExample
             // 
             // btnMovieDelete
             // 
+            this.btnMovieDelete.BackColor = System.Drawing.Color.IndianRed;
             this.btnMovieDelete.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovieDelete.Location = new System.Drawing.Point(116, 350);
             this.btnMovieDelete.Name = "btnMovieDelete";
             this.btnMovieDelete.Size = new System.Drawing.Size(82, 37);
             this.btnMovieDelete.TabIndex = 52;
             this.btnMovieDelete.Text = "Delete";
-            this.btnMovieDelete.UseVisualStyleBackColor = true;
+            this.btnMovieDelete.UseVisualStyleBackColor = false;
             this.btnMovieDelete.Click += new System.EventHandler(this.btnMovieDelete_Click);
             // 
             // btnMovieSave
             // 
+            this.btnMovieSave.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnMovieSave.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMovieSave.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnMovieSave.Location = new System.Drawing.Point(11, 350);
             this.btnMovieSave.Name = "btnMovieSave";
             this.btnMovieSave.Size = new System.Drawing.Size(82, 37);
             this.btnMovieSave.TabIndex = 51;
             this.btnMovieSave.Text = "Save";
-            this.btnMovieSave.UseVisualStyleBackColor = true;
+            this.btnMovieSave.UseVisualStyleBackColor = false;
             this.btnMovieSave.Click += new System.EventHandler(this.btnMovieSave_Click);
             // 
             // txtLength
@@ -223,19 +228,32 @@ namespace DapperCRUDExample
             // 
             // btnGoToHome
             // 
-            this.btnGoToHome.Location = new System.Drawing.Point(698, 12);
+            this.btnGoToHome.BackgroundImage = global::DapperCRUDExample.Properties.Resources.Home;
+            this.btnGoToHome.Image = global::DapperCRUDExample.Properties.Resources.Home;
+            this.btnGoToHome.Location = new System.Drawing.Point(711, 12);
             this.btnGoToHome.Name = "btnGoToHome";
-            this.btnGoToHome.Size = new System.Drawing.Size(95, 28);
+            this.btnGoToHome.Size = new System.Drawing.Size(82, 76);
             this.btnGoToHome.TabIndex = 61;
             this.btnGoToHome.Text = "Home Page";
             this.btnGoToHome.UseVisualStyleBackColor = true;
             this.btnGoToHome.Click += new System.EventHandler(this.btnGoToHome_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(319, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 23);
+            this.label7.TabIndex = 62;
+            this.label7.Text = "Manage Movies";
             // 
             // ManageMovies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnGoToHome);
             this.Controls.Add(this.cmbxDirectors);
             this.Controls.Add(this.cmbxGenres);
@@ -255,8 +273,9 @@ namespace DapperCRUDExample
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtMovieTitle);
             this.Controls.Add(this.label5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManageMovies";
-            this.Text = "ManageMovies";
+            this.Text = "ManageMovies ";
             this.Load += new System.EventHandler(this.ManageMovies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).EndInit();
             this.ResumeLayout(false);
@@ -285,5 +304,6 @@ namespace DapperCRUDExample
         private System.Windows.Forms.ComboBox cmbxGenres;
         private System.Windows.Forms.ComboBox cmbxDirectors;
         private System.Windows.Forms.Button btnGoToHome;
+        private System.Windows.Forms.Label label7;
     }
 }

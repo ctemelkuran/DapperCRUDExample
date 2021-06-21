@@ -29,16 +29,24 @@ namespace DapperCRUDExample
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.btnGoToMovies = new System.Windows.Forms.Button();
             this.btnGoToActors = new System.Windows.Forms.Button();
             this.btnGoToDirectors = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGoToMovies
             // 
-            this.btnGoToMovies.Location = new System.Drawing.Point(572, 196);
+            this.btnGoToMovies.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoToMovies.Location = new System.Drawing.Point(105, 44);
             this.btnGoToMovies.Name = "btnGoToMovies";
-            this.btnGoToMovies.Size = new System.Drawing.Size(87, 34);
+            this.btnGoToMovies.Size = new System.Drawing.Size(95, 60);
             this.btnGoToMovies.TabIndex = 0;
             this.btnGoToMovies.Text = "Movies";
             this.btnGoToMovies.UseVisualStyleBackColor = true;
@@ -46,9 +54,10 @@ namespace DapperCRUDExample
             // 
             // btnGoToActors
             // 
-            this.btnGoToActors.Location = new System.Drawing.Point(572, 239);
+            this.btnGoToActors.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoToActors.Location = new System.Drawing.Point(375, 44);
             this.btnGoToActors.Name = "btnGoToActors";
-            this.btnGoToActors.Size = new System.Drawing.Size(87, 34);
+            this.btnGoToActors.Size = new System.Drawing.Size(95, 60);
             this.btnGoToActors.TabIndex = 1;
             this.btnGoToActors.Text = "Actors";
             this.btnGoToActors.UseVisualStyleBackColor = true;
@@ -56,24 +65,64 @@ namespace DapperCRUDExample
             // 
             // btnGoToDirectors
             // 
-            this.btnGoToDirectors.Location = new System.Drawing.Point(572, 289);
+            this.btnGoToDirectors.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoToDirectors.Location = new System.Drawing.Point(661, 44);
             this.btnGoToDirectors.Name = "btnGoToDirectors";
-            this.btnGoToDirectors.Size = new System.Drawing.Size(87, 34);
+            this.btnGoToDirectors.Size = new System.Drawing.Size(95, 60);
             this.btnGoToDirectors.TabIndex = 2;
             this.btnGoToDirectors.Text = "Directors";
             this.btnGoToDirectors.UseVisualStyleBackColor = true;
             this.btnGoToDirectors.Click += new System.EventHandler(this.btnGoToDirectors_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DapperCRUDExample.Properties.Resources._3;
+            this.pictureBox1.Location = new System.Drawing.Point(39, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DapperCRUDExample.Properties.Resources._2;
+            this.pictureBox2.Location = new System.Drawing.Point(309, 44);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DapperCRUDExample.Properties.Resources._1;
+            this.pictureBox3.Location = new System.Drawing.Point(595, 44);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnGoToDirectors);
             this.Controls.Add(this.btnGoToActors);
             this.Controls.Add(this.btnGoToMovies);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HomePage";
             this.Text = "HomePage";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,5 +132,8 @@ namespace DapperCRUDExample
         private System.Windows.Forms.Button btnGoToMovies;
         private System.Windows.Forms.Button btnGoToActors;
         private System.Windows.Forms.Button btnGoToDirectors;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

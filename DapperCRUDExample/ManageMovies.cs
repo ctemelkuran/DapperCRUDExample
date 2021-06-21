@@ -159,7 +159,6 @@ namespace DapperCRUDExample
                 if (dgvMovies.CurrentRow.Index != -1)
                 {
                     Id = Convert.ToInt32(dgvMovies.CurrentRow.Cells[0].Value.ToString());
-                    
                     txtMovieTitle.Text = dgvMovies.CurrentRow.Cells[2].Value.ToString();
                     txtReleaseYear.Text = dgvMovies.CurrentRow.Cells[3].Value.ToString();
                     txtRating.Text = dgvMovies.CurrentRow.Cells[4].Value.ToString();
@@ -179,8 +178,12 @@ namespace DapperCRUDExample
         {
             try
             {
+                // assign selected movie's id to delete it from MovieGenres table
+                int movieId = Convert.ToInt32(dgvMovies.CurrentRow.Cells[0].Value.ToString());
+
                 DynamicParameters param = new DynamicParameters();
                 param.Add("@Id", Id);
+                param.Add("@MovieId", movieId);
                 using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MovieDatabaseDB")))
                 {
                     connection.Execute("Movie_DeleteById", param, commandType: CommandType.StoredProcedure);

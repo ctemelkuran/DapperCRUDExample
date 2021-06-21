@@ -29,6 +29,7 @@ namespace DapperCRUDExample
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageDirectors));
             this.label7 = new System.Windows.Forms.Label();
             this.btnDirectorSearch = new System.Windows.Forms.Button();
             this.txtDirectorSearch = new System.Windows.Forms.TextBox();
@@ -223,6 +224,7 @@ namespace DapperCRUDExample
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtDirectorFirstName);
             this.Controls.Add(this.label5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManageDirectors";
             this.Text = "ManageDirectors";
             this.Load += new System.EventHandler(this.ManageDirectors_Load);
