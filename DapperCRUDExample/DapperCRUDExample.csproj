@@ -51,17 +51,47 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actor.cs" />
-    <Compile Include="Admin.cs">
+    <Compile Include="Genre.cs" />
+    <Compile Include="ManageActors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <Compile Include="ManageActors.Designer.cs">
+      <DependentUpon>ManageActors.cs</DependentUpon>
     </Compile>
+    <Compile Include="Director.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageDirectors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageDirectors.Designer.cs">
+      <DependentUpon>ManageDirectors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMovies.Designer.cs">
+      <DependentUpon>ManageMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <EmbeddedResource Include="ManageActors.resx">
+      <DependentUpon>ManageActors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDirectors.resx">
+      <DependentUpon>ManageDirectors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMovies.resx">
+      <DependentUpon>ManageMovies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

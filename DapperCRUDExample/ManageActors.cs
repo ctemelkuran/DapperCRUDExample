@@ -11,10 +11,10 @@ using Dapper;
 
 namespace DapperCRUDExample
 {
-    public partial class Admin : Form
+    public partial class ManageActors : Form
     {
         int actorId = 0;
-        public Admin()
+        public ManageActors()
         {
             InitializeComponent();
         }
@@ -121,7 +121,7 @@ namespace DapperCRUDExample
                     txtActorBirthYear.Text = dgvActors.CurrentRow.Cells[4].Value.ToString();
                     btnActorDelete.Enabled = true;
                     btnActorSave.Text = "Edit";
-                }
+                } 
             }
             catch (Exception ex)
             {
@@ -149,6 +149,13 @@ namespace DapperCRUDExample
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnGoToHome_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            Hide();
         }
     }
 }
