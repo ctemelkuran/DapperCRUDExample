@@ -49,14 +49,14 @@ namespace DapperCRUDExample
             this.ActorLastNameLabel = new System.Windows.Forms.Label();
             this.ActorFirstNameLabel = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnAddActorToMovie = new System.Windows.Forms.Button();
+            this.listbxMovieFound = new System.Windows.Forms.ListBox();
+            this.listbxActorFound = new System.Windows.Forms.ListBox();
+            this.txtMovieSearchByTitle = new System.Windows.Forms.TextBox();
             this.btnMovieActorSearch = new System.Windows.Forms.Button();
             this.txtActorSearchByLastName = new System.Windows.Forms.TextBox();
-            this.txtMovieSearchByTitle = new System.Windows.Forms.TextBox();
-            this.listbxActorFound = new System.Windows.Forms.ListBox();
-            this.listbxMovieFound = new System.Windows.Forms.ListBox();
-            this.btnAddActorToMovie = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.ActorsTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvActors)).BeginInit();
@@ -276,79 +276,87 @@ namespace DapperCRUDExample
             this.tabPage1.Text = "Movie & Actor";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(390, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 18);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Search for Movie";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(164, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 18);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Search for Actor";
+            // 
+            // btnAddActorToMovie
+            // 
+            this.btnAddActorToMovie.BackColor = System.Drawing.Color.BurlyWood;
+            this.btnAddActorToMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAddActorToMovie.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddActorToMovie.Location = new System.Drawing.Point(269, 280);
+            this.btnAddActorToMovie.Name = "btnAddActorToMovie";
+            this.btnAddActorToMovie.Size = new System.Drawing.Size(140, 36);
+            this.btnAddActorToMovie.TabIndex = 19;
+            this.btnAddActorToMovie.Text = "Add Actor To Movie";
+            this.btnAddActorToMovie.UseVisualStyleBackColor = false;
+            this.btnAddActorToMovie.Click += new System.EventHandler(this.btnAddActorToMovie_Click);
+            // 
+            // listbxMovieFound
+            // 
+            this.listbxMovieFound.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listbxMovieFound.FormattingEnabled = true;
+            this.listbxMovieFound.ItemHeight = 18;
+            this.listbxMovieFound.Location = new System.Drawing.Point(374, 151);
+            this.listbxMovieFound.Name = "listbxMovieFound";
+            this.listbxMovieFound.Size = new System.Drawing.Size(162, 112);
+            this.listbxMovieFound.TabIndex = 18;
+            // 
+            // listbxActorFound
+            // 
+            this.listbxActorFound.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listbxActorFound.FormattingEnabled = true;
+            this.listbxActorFound.ItemHeight = 18;
+            this.listbxActorFound.Location = new System.Drawing.Point(150, 151);
+            this.listbxActorFound.Name = "listbxActorFound";
+            this.listbxActorFound.Size = new System.Drawing.Size(162, 112);
+            this.listbxActorFound.TabIndex = 17;
+            // 
+            // txtMovieSearchByTitle
+            // 
+            this.txtMovieSearchByTitle.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMovieSearchByTitle.Location = new System.Drawing.Point(374, 100);
+            this.txtMovieSearchByTitle.Name = "txtMovieSearchByTitle";
+            this.txtMovieSearchByTitle.Size = new System.Drawing.Size(162, 26);
+            this.txtMovieSearchByTitle.TabIndex = 16;
+            // 
             // btnMovieActorSearch
             // 
-            this.btnMovieActorSearch.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnMovieActorSearch.BackColor = System.Drawing.SystemColors.Control;
+            this.btnMovieActorSearch.BackgroundImage = global::DapperCRUDExample.Properties.Resources.search;
+            this.btnMovieActorSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMovieActorSearch.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMovieActorSearch.Location = new System.Drawing.Point(547, 101);
+            this.btnMovieActorSearch.Location = new System.Drawing.Point(569, 88);
             this.btnMovieActorSearch.Name = "btnMovieActorSearch";
-            this.btnMovieActorSearch.Size = new System.Drawing.Size(72, 26);
+            this.btnMovieActorSearch.Size = new System.Drawing.Size(50, 50);
             this.btnMovieActorSearch.TabIndex = 15;
-            this.btnMovieActorSearch.Text = "Search";
             this.btnMovieActorSearch.UseVisualStyleBackColor = false;
             this.btnMovieActorSearch.Click += new System.EventHandler(this.btnMovieActorSearch_Click);
             // 
             // txtActorSearchByLastName
             // 
             this.txtActorSearchByLastName.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtActorSearchByLastName.Location = new System.Drawing.Point(86, 102);
+            this.txtActorSearchByLastName.Location = new System.Drawing.Point(150, 101);
             this.txtActorSearchByLastName.Name = "txtActorSearchByLastName";
             this.txtActorSearchByLastName.Size = new System.Drawing.Size(162, 26);
             this.txtActorSearchByLastName.TabIndex = 14;
-            // 
-            // txtMovieSearchByTitle
-            // 
-            this.txtMovieSearchByTitle.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMovieSearchByTitle.Location = new System.Drawing.Point(310, 101);
-            this.txtMovieSearchByTitle.Name = "txtMovieSearchByTitle";
-            this.txtMovieSearchByTitle.Size = new System.Drawing.Size(162, 26);
-            this.txtMovieSearchByTitle.TabIndex = 16;
-            // 
-            // listbxActorFound
-            // 
-            this.listbxActorFound.FormattingEnabled = true;
-            this.listbxActorFound.Location = new System.Drawing.Point(86, 152);
-            this.listbxActorFound.Name = "listbxActorFound";
-            this.listbxActorFound.Size = new System.Drawing.Size(162, 43);
-            this.listbxActorFound.TabIndex = 17;
-            // 
-            // listbxMovieFound
-            // 
-            this.listbxMovieFound.FormattingEnabled = true;
-            this.listbxMovieFound.Location = new System.Drawing.Point(310, 152);
-            this.listbxMovieFound.Name = "listbxMovieFound";
-            this.listbxMovieFound.Size = new System.Drawing.Size(162, 43);
-            this.listbxMovieFound.TabIndex = 18;
-            // 
-            // btnAddActorToMovie
-            // 
-            this.btnAddActorToMovie.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnAddActorToMovie.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddActorToMovie.Location = new System.Drawing.Point(202, 232);
-            this.btnAddActorToMovie.Name = "btnAddActorToMovie";
-            this.btnAddActorToMovie.Size = new System.Drawing.Size(155, 63);
-            this.btnAddActorToMovie.TabIndex = 19;
-            this.btnAddActorToMovie.Text = "Add Actor To Movie";
-            this.btnAddActorToMovie.UseVisualStyleBackColor = false;
-            this.btnAddActorToMovie.Click += new System.EventHandler(this.btnAddActorToMovie_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Search for Actor";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(336, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 13);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Search for Movie";
             // 
             // ManageActors
             // 

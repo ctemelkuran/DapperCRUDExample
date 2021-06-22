@@ -188,7 +188,7 @@ namespace DapperCRUDExample
             // last name ve title parametreleri alan stored procedure
             DataAccessMovieActors db = new DataAccessMovieActors();
             db.InsertMovieActors(listbxMovieFound.SelectedValue.ToString(), listbxActorFound.SelectedValue.ToString());
-            MessageBox.Show(actorText +" added to " + movieText + " movie!");
+            MessageBox.Show(actorText +" added to the " + movieText + " movie!");
         }
     }
 }

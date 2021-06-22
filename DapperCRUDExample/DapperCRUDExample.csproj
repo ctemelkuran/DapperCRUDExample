@@ -134,16 +134,10 @@
     <None Include="Resources\3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Adsız tasarım %285%29 %281%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Adsız tasarım %285%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Adsız tasarım %285%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\homepage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
