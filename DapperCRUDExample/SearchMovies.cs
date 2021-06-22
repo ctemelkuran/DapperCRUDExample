@@ -34,7 +34,7 @@ namespace DapperCRUDExample
             string length = txtLength.Text;
             string genre = txtMovieGenre.Text;
             string director = txtMovieDirector.Text;
-
+            
             string query = "SELECT DISTINCT dbo.Movies.Title, dbo.Movies.ReleaseYear, dbo.Movies.Rating, dbo.Movies.MovieLength," +
                 " dbo.Genres.GenreName, dbo.Directors.FirstName, dbo.Directors.LastName " +
                 "FROM dbo.MovieGenres INNER JOIN dbo.Genres ON dbo.MovieGenres.GenreId = dbo.Genres.GenreId " +
