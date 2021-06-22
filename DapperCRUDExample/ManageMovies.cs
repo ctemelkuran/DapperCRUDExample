@@ -37,7 +37,7 @@ namespace DapperCRUDExample
                 director = connection.Query<Director>("SELECT DirectorId, FirstName, LastName FROM Directors", null).ToList();
                 cmbxDirectors.DataSource = director;
                 cmbxDirectors.ValueMember = "DirectorId";
-                cmbxDirectors.DisplayMember = "FullName";
+                cmbxDirectors.DisplayMember = "DirectorFullName";
             }
 
             try

@@ -14,7 +14,7 @@ namespace DapperCRUDExample
         public string Nationality { get; set; }
         public int Birth { get; set; }
 
-        public string FullName
+        public string DirectorFullName
         {
             get
             {

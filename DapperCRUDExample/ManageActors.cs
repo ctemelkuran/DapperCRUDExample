@@ -14,9 +14,23 @@ namespace DapperCRUDExample
     public partial class ManageActors : Form
     {
         int actorId = 0;
+        List<Actor> actor = new List<Actor>(); //To search actor at Movie & Actor
+        List<Movie> movie = new List<Movie>(); //To search movie at Movie & Actor
         public ManageActors()
         {
             InitializeComponent();
+            UpdateBinding();
+        }
+
+        private void UpdateBinding()
+        {
+            listbxActorFound.DataSource = actor;
+            listbxActorFound.ValueMember = "LastName";
+            listbxActorFound.DisplayMember = "ActorFullName";
+
+            listbxMovieFound.DataSource = movie;
+            listbxMovieFound.ValueMember = "Title";
+            listbxMovieFound.DisplayMember = "Title";
         }
 
         private void btnActorSave_Click(object sender, EventArgs e)
@@ -34,7 +48,7 @@ namespace DapperCRUDExample
                     connection.Execute("Actor_InsertOrEdit", param, commandType: CommandType.StoredProcedure);
                     if (actorId == 0)
                     {
-                        MessageBox.Show("Actor "+ txtActorFirstName.Text+" " + txtActorLastName.Text + " saved successfully!");
+                        MessageBox.Show("Actor " + txtActorFirstName.Text + " " + txtActorLastName.Text + " saved successfully!");
                     }
                     else
                     {
@@ -121,12 +135,12 @@ namespace DapperCRUDExample
                     txtActorBirthYear.Text = dgvActors.CurrentRow.Cells[4].Value.ToString();
                     btnActorDelete.Enabled = true;
                     btnActorSave.Text = "Edit";
-                } 
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                
+
             }
         }
 
@@ -142,7 +156,7 @@ namespace DapperCRUDExample
                     Clear();
                     FillActorDataGridView();
                     MessageBox.Show("Actor Deleted Successfully!");
-                    
+
                 }
             }
             catch (Exception ex)
@@ -156,6 +170,25 @@ namespace DapperCRUDExample
             HomePage homepage = new HomePage();
             homepage.Show();
             Hide();
+        }
+
+
+        private void btnMovieActorSearch_Click(object sender, EventArgs e)
+        {
+            DataAccessMovieActors db = new DataAccessMovieActors();
+            actor = db.GetActor(txtActorSearchByLastName.Text);
+            movie = db.GetMovie(txtMovieSearchByTitle.Text);
+            UpdateBinding();
+        }
+
+        private void btnAddActorToMovie_Click(object sender, EventArgs e)
+        {
+            string actorText = listbxActorFound.GetItemText(listbxActorFound.SelectedItem);
+            string movieText = listbxMovieFound.GetItemText(listbxMovieFound.SelectedItem);
+            // last name ve title parametreleri alan stored procedure
+            DataAccessMovieActors db = new DataAccessMovieActors();
+            db.InsertMovieActors(listbxMovieFound.SelectedValue.ToString(), listbxActorFound.SelectedValue.ToString());
+            MessageBox.Show(actorText +" added to " + movieText + " movie!");
         }
     }
 }

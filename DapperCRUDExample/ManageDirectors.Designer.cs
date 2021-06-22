@@ -197,11 +197,12 @@ namespace DapperCRUDExample
             // 
             // btnGoToHome
             // 
-            this.btnGoToHome.Location = new System.Drawing.Point(693, 12);
+            this.btnGoToHome.BackgroundImage = global::DapperCRUDExample.Properties.Resources.homepage;
+            this.btnGoToHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGoToHome.Location = new System.Drawing.Point(733, 12);
             this.btnGoToHome.Name = "btnGoToHome";
-            this.btnGoToHome.Size = new System.Drawing.Size(95, 28);
+            this.btnGoToHome.Size = new System.Drawing.Size(50, 50);
             this.btnGoToHome.TabIndex = 45;
-            this.btnGoToHome.Text = "Home Page";
             this.btnGoToHome.UseVisualStyleBackColor = true;
             this.btnGoToHome.Click += new System.EventHandler(this.btnGoToHome_Click);
             // 

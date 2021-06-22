@@ -13,5 +13,13 @@ namespace DapperCRUDExample
         public string LastName { get; set; }
         public string Nationality { get; set; }
         public int Birth { get; set; }
+
+        public string ActorFullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
     }
 }
