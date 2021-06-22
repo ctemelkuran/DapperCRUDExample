@@ -84,7 +84,7 @@ namespace DapperCRUDExample
             // 
             // btnMovieCancel
             // 
-            this.btnMovieCancel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMovieCancel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovieCancel.Location = new System.Drawing.Point(215, 350);
             this.btnMovieCancel.Name = "btnMovieCancel";
             this.btnMovieCancel.Size = new System.Drawing.Size(82, 37);
@@ -96,7 +96,7 @@ namespace DapperCRUDExample
             // btnMovieDelete
             // 
             this.btnMovieDelete.BackColor = System.Drawing.Color.IndianRed;
-            this.btnMovieDelete.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMovieDelete.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovieDelete.Location = new System.Drawing.Point(116, 350);
             this.btnMovieDelete.Name = "btnMovieDelete";
             this.btnMovieDelete.Size = new System.Drawing.Size(82, 37);
@@ -108,7 +108,7 @@ namespace DapperCRUDExample
             // btnMovieSave
             // 
             this.btnMovieSave.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnMovieSave.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMovieSave.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovieSave.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnMovieSave.Location = new System.Drawing.Point(11, 350);
             this.btnMovieSave.Name = "btnMovieSave";
@@ -228,13 +228,13 @@ namespace DapperCRUDExample
             // 
             // btnGoToHome
             // 
-            this.btnGoToHome.BackgroundImage = global::DapperCRUDExample.Properties.Resources.Home;
-            this.btnGoToHome.Image = global::DapperCRUDExample.Properties.Resources.Home;
-            this.btnGoToHome.Location = new System.Drawing.Point(711, 12);
+            this.btnGoToHome.BackgroundImage = global::DapperCRUDExample.Properties.Resources.homepage;
+            this.btnGoToHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGoToHome.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnGoToHome.Location = new System.Drawing.Point(738, 17);
             this.btnGoToHome.Name = "btnGoToHome";
-            this.btnGoToHome.Size = new System.Drawing.Size(82, 76);
+            this.btnGoToHome.Size = new System.Drawing.Size(50, 50);
             this.btnGoToHome.TabIndex = 61;
-            this.btnGoToHome.Text = "Home Page";
             this.btnGoToHome.UseVisualStyleBackColor = true;
             this.btnGoToHome.Click += new System.EventHandler(this.btnGoToHome_Click);
             // 

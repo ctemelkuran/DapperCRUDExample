@@ -90,7 +90,7 @@ namespace DapperCRUDExample
             // 
             // btnDirectorCancel
             // 
-            this.btnDirectorCancel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDirectorCancel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDirectorCancel.Location = new System.Drawing.Point(210, 259);
             this.btnDirectorCancel.Name = "btnDirectorCancel";
             this.btnDirectorCancel.Size = new System.Drawing.Size(82, 37);
@@ -101,24 +101,26 @@ namespace DapperCRUDExample
             // 
             // btnDirectorDelete
             // 
-            this.btnDirectorDelete.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDirectorDelete.BackColor = System.Drawing.Color.IndianRed;
+            this.btnDirectorDelete.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDirectorDelete.Location = new System.Drawing.Point(111, 259);
             this.btnDirectorDelete.Name = "btnDirectorDelete";
             this.btnDirectorDelete.Size = new System.Drawing.Size(82, 37);
             this.btnDirectorDelete.TabIndex = 38;
             this.btnDirectorDelete.Text = "Delete";
-            this.btnDirectorDelete.UseVisualStyleBackColor = true;
+            this.btnDirectorDelete.UseVisualStyleBackColor = false;
             this.btnDirectorDelete.Click += new System.EventHandler(this.btnDirectorDelete_Click);
             // 
             // btnDirectorSave
             // 
-            this.btnDirectorSave.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDirectorSave.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnDirectorSave.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDirectorSave.Location = new System.Drawing.Point(6, 259);
             this.btnDirectorSave.Name = "btnDirectorSave";
             this.btnDirectorSave.Size = new System.Drawing.Size(82, 37);
             this.btnDirectorSave.TabIndex = 37;
             this.btnDirectorSave.Text = "Save";
-            this.btnDirectorSave.UseVisualStyleBackColor = true;
+            this.btnDirectorSave.UseVisualStyleBackColor = false;
             this.btnDirectorSave.Click += new System.EventHandler(this.btnDirectorSave_Click);
             // 
             // txtDirectorBirthYear
