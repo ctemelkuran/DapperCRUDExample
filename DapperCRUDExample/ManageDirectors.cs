@@ -69,6 +69,7 @@ namespace DapperCRUDExample
 
                 // Hide the DirectorId
                 dgvDirectors.Columns[0].Visible = false;
+                dgvDirectors.Columns[5].Visible = false;
             }
         }
         void Clear()

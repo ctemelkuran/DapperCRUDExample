@@ -79,6 +79,7 @@ namespace DapperCRUDExample
 
                 // Hide the ActorId
                 dgvActors.Columns[0].Visible = false;
+                dgvActors.Columns[5].Visible = false;
             }
         }
 

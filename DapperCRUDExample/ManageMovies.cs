@@ -114,8 +114,9 @@ namespace DapperCRUDExample
 
                 dgvMovies.DataSource = movieList;
 
-                // Hide the DirectorId
+                // Hide Movie and Director Id
                 dgvMovies.Columns[0].Visible = false;
+                dgvMovies.Columns[1].Visible = false;
             }
         }
 

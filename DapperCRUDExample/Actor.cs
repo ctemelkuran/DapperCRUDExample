@@ -21,5 +21,15 @@ namespace DapperCRUDExample
                 return FirstName + " " + LastName;
             }
         }
+        
+        public int ActorAge
+        {
+            get
+            {
+                int currentYear = DateTime.Now.Year;
+                return currentYear - Birth;
+            }
+        }
+
     }
 }
