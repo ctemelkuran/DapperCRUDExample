@@ -36,6 +36,7 @@ namespace DapperCRUDExample
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnSearchMovies = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -104,6 +105,17 @@ namespace DapperCRUDExample
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
+            // btnSearchMovies
+            // 
+            this.btnSearchMovies.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchMovies.Location = new System.Drawing.Point(69, 136);
+            this.btnSearchMovies.Name = "btnSearchMovies";
+            this.btnSearchMovies.Size = new System.Drawing.Size(95, 60);
+            this.btnSearchMovies.TabIndex = 6;
+            this.btnSearchMovies.Text = "Search Movies";
+            this.btnSearchMovies.UseVisualStyleBackColor = true;
+            this.btnSearchMovies.Click += new System.EventHandler(this.btnSearchMovies_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -111,6 +123,7 @@ namespace DapperCRUDExample
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSearchMovies);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -135,5 +148,6 @@ namespace DapperCRUDExample
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnSearchMovies;
     }
 }

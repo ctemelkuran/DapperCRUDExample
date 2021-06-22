@@ -22,7 +22,7 @@ namespace DapperCRUDExample.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace DapperCRUDExample.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DapperCRUDExample.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace DapperCRUDExample.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,9 +63,9 @@ namespace DapperCRUDExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1 {
+        public static System.Drawing.Bitmap _1 {
             get {
-                object obj = ResourceManager.GetObject("_1", resourceCulture);
+                object obj = ResourceManager.GetObject("1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace DapperCRUDExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _2 {
+        public static System.Drawing.Bitmap _2 {
             get {
-                object obj = ResourceManager.GetObject("_2", resourceCulture);
+                object obj = ResourceManager.GetObject("2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace DapperCRUDExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _3 {
+        public static System.Drawing.Bitmap _3 {
             get {
-                object obj = ResourceManager.GetObject("_3", resourceCulture);
+                object obj = ResourceManager.GetObject("3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,7 +93,7 @@ namespace DapperCRUDExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon Adsız_tasarım__5_ {
+        public static System.Drawing.Icon Adsız_tasarım__5_ {
             get {
                 object obj = ResourceManager.GetObject("Adsız_tasarım__5_", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -103,7 +103,7 @@ namespace DapperCRUDExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon Adsız_tasarım__5___1_ {
+        public static System.Drawing.Icon Adsız_tasarım__5___1_ {
             get {
                 object obj = ResourceManager.GetObject("Adsız_tasarım__5___1_", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -113,17 +113,7 @@ namespace DapperCRUDExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Home {
-            get {
-                object obj = ResourceManager.GetObject("Home", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap homepage {
+        public static System.Drawing.Bitmap homepage {
             get {
                 object obj = ResourceManager.GetObject("homepage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +123,7 @@ namespace DapperCRUDExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MovieBackground {
+        public static System.Drawing.Bitmap MovieBackground {
             get {
                 object obj = ResourceManager.GetObject("MovieBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +133,7 @@ namespace DapperCRUDExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon MovieIcon {
+        public static System.Drawing.Icon MovieIcon {
             get {
                 object obj = ResourceManager.GetObject("MovieIcon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
@@ -153,7 +143,7 @@ namespace DapperCRUDExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap search {
+        public static System.Drawing.Bitmap search {
             get {
                 object obj = ResourceManager.GetObject("search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

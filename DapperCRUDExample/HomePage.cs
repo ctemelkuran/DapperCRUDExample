@@ -17,13 +17,12 @@ namespace DapperCRUDExample
             InitializeComponent();
         }
 
-       
 
         private void btnGoToActors_Click(object sender, EventArgs e)
         {
             ManageActors manageActors = new ManageActors();
             manageActors.Show();
-            this.Hide();
+            Hide();
         }
 
         private void btnGoToDirectors_Click(object sender, EventArgs e)
@@ -37,6 +36,13 @@ namespace DapperCRUDExample
         {
             ManageMovies manageMovies = new ManageMovies();
             manageMovies.Show();
+            Hide();
+        }
+
+        private void btnSearchMovies_Click(object sender, EventArgs e)
+        {
+            SearchMovies searchMovies = new SearchMovies();
+            searchMovies.Show();
             Hide();
         }
     }
