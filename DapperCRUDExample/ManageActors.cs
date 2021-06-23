@@ -191,5 +191,12 @@ namespace DapperCRUDExample
             db.InsertMovieActors(listbxMovieFound.SelectedValue.ToString(), listbxActorFound.SelectedValue.ToString());
             MessageBox.Show(actorText +" added to the " + movieText + " movie!");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            Hide();
+        }
     }
 }

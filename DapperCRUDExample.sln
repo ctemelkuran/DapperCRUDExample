@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperCRUDExample", "DapperCRUDExample\DapperCRUDExample.csproj", "{114DB1E1-A602-48F7-A523-08CC91C08F86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTown", "DapperCRUDExample\MovieTown.csproj", "{114DB1E1-A602-48F7-A523-08CC91C08F86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -53,7 +53,9 @@ namespace DapperCRUDExample
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(287, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(152, 23);
@@ -63,7 +65,7 @@ namespace DapperCRUDExample
             // btnDirectorSearch
             // 
             this.btnDirectorSearch.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDirectorSearch.Location = new System.Drawing.Point(706, 86);
+            this.btnDirectorSearch.Location = new System.Drawing.Point(726, 132);
             this.btnDirectorSearch.Name = "btnDirectorSearch";
             this.btnDirectorSearch.Size = new System.Drawing.Size(82, 26);
             this.btnDirectorSearch.TabIndex = 42;
@@ -74,7 +76,7 @@ namespace DapperCRUDExample
             // txtDirectorSearch
             // 
             this.txtDirectorSearch.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirectorSearch.Location = new System.Drawing.Point(331, 85);
+            this.txtDirectorSearch.Location = new System.Drawing.Point(351, 131);
             this.txtDirectorSearch.Name = "txtDirectorSearch";
             this.txtDirectorSearch.Size = new System.Drawing.Size(369, 26);
             this.txtDirectorSearch.TabIndex = 41;
@@ -90,17 +92,17 @@ namespace DapperCRUDExample
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDirectors.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDirectors.Location = new System.Drawing.Point(331, 125);
+            this.dgvDirectors.Location = new System.Drawing.Point(351, 171);
             this.dgvDirectors.Name = "dgvDirectors";
             this.dgvDirectors.ReadOnly = true;
-            this.dgvDirectors.Size = new System.Drawing.Size(457, 190);
+            this.dgvDirectors.Size = new System.Drawing.Size(457, 171);
             this.dgvDirectors.TabIndex = 40;
             this.dgvDirectors.DoubleClick += new System.EventHandler(this.dgvDirectors_DoubleClick);
             // 
             // btnDirectorCancel
             // 
             this.btnDirectorCancel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDirectorCancel.Location = new System.Drawing.Point(210, 259);
+            this.btnDirectorCancel.Location = new System.Drawing.Point(230, 305);
             this.btnDirectorCancel.Name = "btnDirectorCancel";
             this.btnDirectorCancel.Size = new System.Drawing.Size(82, 37);
             this.btnDirectorCancel.TabIndex = 39;
@@ -112,7 +114,7 @@ namespace DapperCRUDExample
             // 
             this.btnDirectorDelete.BackColor = System.Drawing.Color.IndianRed;
             this.btnDirectorDelete.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDirectorDelete.Location = new System.Drawing.Point(111, 259);
+            this.btnDirectorDelete.Location = new System.Drawing.Point(131, 305);
             this.btnDirectorDelete.Name = "btnDirectorDelete";
             this.btnDirectorDelete.Size = new System.Drawing.Size(82, 37);
             this.btnDirectorDelete.TabIndex = 38;
@@ -124,7 +126,7 @@ namespace DapperCRUDExample
             // 
             this.btnDirectorSave.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnDirectorSave.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDirectorSave.Location = new System.Drawing.Point(6, 259);
+            this.btnDirectorSave.Location = new System.Drawing.Point(26, 305);
             this.btnDirectorSave.Name = "btnDirectorSave";
             this.btnDirectorSave.Size = new System.Drawing.Size(82, 37);
             this.btnDirectorSave.TabIndex = 37;
@@ -135,7 +137,7 @@ namespace DapperCRUDExample
             // txtDirectorBirthYear
             // 
             this.txtDirectorBirthYear.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirectorBirthYear.Location = new System.Drawing.Point(91, 198);
+            this.txtDirectorBirthYear.Location = new System.Drawing.Point(111, 244);
             this.txtDirectorBirthYear.Name = "txtDirectorBirthYear";
             this.txtDirectorBirthYear.Size = new System.Drawing.Size(199, 26);
             this.txtDirectorBirthYear.TabIndex = 36;
@@ -143,8 +145,10 @@ namespace DapperCRUDExample
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 201);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(23, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 18);
             this.label1.TabIndex = 35;
@@ -153,7 +157,7 @@ namespace DapperCRUDExample
             // txtDirectorNationality
             // 
             this.txtDirectorNationality.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirectorNationality.Location = new System.Drawing.Point(91, 163);
+            this.txtDirectorNationality.Location = new System.Drawing.Point(111, 209);
             this.txtDirectorNationality.Name = "txtDirectorNationality";
             this.txtDirectorNationality.Size = new System.Drawing.Size(199, 26);
             this.txtDirectorNationality.TabIndex = 34;
@@ -161,8 +165,10 @@ namespace DapperCRUDExample
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 166);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(23, 212);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 18);
             this.label2.TabIndex = 33;
@@ -171,7 +177,7 @@ namespace DapperCRUDExample
             // txtDirectorLastName
             // 
             this.txtDirectorLastName.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirectorLastName.Location = new System.Drawing.Point(91, 125);
+            this.txtDirectorLastName.Location = new System.Drawing.Point(111, 171);
             this.txtDirectorLastName.Name = "txtDirectorLastName";
             this.txtDirectorLastName.Size = new System.Drawing.Size(199, 26);
             this.txtDirectorLastName.TabIndex = 32;
@@ -179,8 +185,10 @@ namespace DapperCRUDExample
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 128);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(23, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 18);
             this.label3.TabIndex = 31;
@@ -189,7 +197,7 @@ namespace DapperCRUDExample
             // txtDirectorFirstName
             // 
             this.txtDirectorFirstName.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirectorFirstName.Location = new System.Drawing.Point(91, 86);
+            this.txtDirectorFirstName.Location = new System.Drawing.Point(111, 132);
             this.txtDirectorFirstName.Name = "txtDirectorFirstName";
             this.txtDirectorFirstName.Size = new System.Drawing.Size(199, 26);
             this.txtDirectorFirstName.TabIndex = 30;
@@ -197,8 +205,10 @@ namespace DapperCRUDExample
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 89);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(23, 135);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 18);
             this.label5.TabIndex = 29;
@@ -208,7 +218,7 @@ namespace DapperCRUDExample
             // 
             this.btnGoToHome.BackgroundImage = global::DapperCRUDExample.Properties.Resources.homepage;
             this.btnGoToHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGoToHome.Location = new System.Drawing.Point(733, 12);
+            this.btnGoToHome.Location = new System.Drawing.Point(758, 17);
             this.btnGoToHome.Name = "btnGoToHome";
             this.btnGoToHome.Size = new System.Drawing.Size(50, 50);
             this.btnGoToHome.TabIndex = 45;
@@ -219,7 +229,9 @@ namespace DapperCRUDExample
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 349);
+            this.BackgroundImage = global::DapperCRUDExample.Properties.Resources.blackbg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.btnGoToHome);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnDirectorSearch);
@@ -238,7 +250,7 @@ namespace DapperCRUDExample
             this.Controls.Add(this.label5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManageDirectors";
-            this.Text = "ManageDirectors";
+            this.Text = "Manage Directors";
             this.Load += new System.EventHandler(this.ManageDirectors_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDirectors)).EndInit();
             this.ResumeLayout(false);

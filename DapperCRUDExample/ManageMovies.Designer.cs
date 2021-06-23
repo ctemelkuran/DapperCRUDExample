@@ -56,7 +56,7 @@ namespace DapperCRUDExample
             // btnDirectorSearch
             // 
             this.btnDirectorSearch.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDirectorSearch.Location = new System.Drawing.Point(711, 111);
+            this.btnDirectorSearch.Location = new System.Drawing.Point(726, 134);
             this.btnDirectorSearch.Name = "btnDirectorSearch";
             this.btnDirectorSearch.Size = new System.Drawing.Size(82, 26);
             this.btnDirectorSearch.TabIndex = 56;
@@ -67,7 +67,7 @@ namespace DapperCRUDExample
             // txtMovieSearch
             // 
             this.txtMovieSearch.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMovieSearch.Location = new System.Drawing.Point(336, 110);
+            this.txtMovieSearch.Location = new System.Drawing.Point(351, 133);
             this.txtMovieSearch.Name = "txtMovieSearch";
             this.txtMovieSearch.Size = new System.Drawing.Size(369, 26);
             this.txtMovieSearch.TabIndex = 55;
@@ -75,17 +75,17 @@ namespace DapperCRUDExample
             // dgvMovies
             // 
             this.dgvMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMovies.Location = new System.Drawing.Point(336, 150);
+            this.dgvMovies.Location = new System.Drawing.Point(351, 173);
             this.dgvMovies.Name = "dgvMovies";
             this.dgvMovies.ReadOnly = true;
-            this.dgvMovies.Size = new System.Drawing.Size(457, 190);
+            this.dgvMovies.Size = new System.Drawing.Size(457, 163);
             this.dgvMovies.TabIndex = 54;
             this.dgvMovies.DoubleClick += new System.EventHandler(this.dgvMovies_DoubleClick);
             // 
             // btnMovieCancel
             // 
             this.btnMovieCancel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMovieCancel.Location = new System.Drawing.Point(215, 350);
+            this.btnMovieCancel.Location = new System.Drawing.Point(237, 363);
             this.btnMovieCancel.Name = "btnMovieCancel";
             this.btnMovieCancel.Size = new System.Drawing.Size(82, 37);
             this.btnMovieCancel.TabIndex = 53;
@@ -97,7 +97,7 @@ namespace DapperCRUDExample
             // 
             this.btnMovieDelete.BackColor = System.Drawing.Color.IndianRed;
             this.btnMovieDelete.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMovieDelete.Location = new System.Drawing.Point(116, 350);
+            this.btnMovieDelete.Location = new System.Drawing.Point(138, 363);
             this.btnMovieDelete.Name = "btnMovieDelete";
             this.btnMovieDelete.Size = new System.Drawing.Size(82, 37);
             this.btnMovieDelete.TabIndex = 52;
@@ -110,7 +110,7 @@ namespace DapperCRUDExample
             this.btnMovieSave.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnMovieSave.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovieSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMovieSave.Location = new System.Drawing.Point(11, 350);
+            this.btnMovieSave.Location = new System.Drawing.Point(33, 363);
             this.btnMovieSave.Name = "btnMovieSave";
             this.btnMovieSave.Size = new System.Drawing.Size(82, 37);
             this.btnMovieSave.TabIndex = 51;
@@ -121,7 +121,7 @@ namespace DapperCRUDExample
             // txtLength
             // 
             this.txtLength.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLength.Location = new System.Drawing.Point(116, 223);
+            this.txtLength.Location = new System.Drawing.Point(131, 246);
             this.txtLength.Name = "txtLength";
             this.txtLength.Size = new System.Drawing.Size(199, 26);
             this.txtLength.TabIndex = 50;
@@ -129,8 +129,10 @@ namespace DapperCRUDExample
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 226);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(23, 249);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 18);
             this.label1.TabIndex = 49;
@@ -139,7 +141,7 @@ namespace DapperCRUDExample
             // txtRating
             // 
             this.txtRating.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRating.Location = new System.Drawing.Point(116, 188);
+            this.txtRating.Location = new System.Drawing.Point(131, 211);
             this.txtRating.Name = "txtRating";
             this.txtRating.Size = new System.Drawing.Size(199, 26);
             this.txtRating.TabIndex = 48;
@@ -147,8 +149,10 @@ namespace DapperCRUDExample
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 191);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(23, 214);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 18);
             this.label2.TabIndex = 47;
@@ -157,7 +161,7 @@ namespace DapperCRUDExample
             // txtReleaseYear
             // 
             this.txtReleaseYear.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReleaseYear.Location = new System.Drawing.Point(116, 150);
+            this.txtReleaseYear.Location = new System.Drawing.Point(131, 173);
             this.txtReleaseYear.Name = "txtReleaseYear";
             this.txtReleaseYear.Size = new System.Drawing.Size(199, 26);
             this.txtReleaseYear.TabIndex = 46;
@@ -165,8 +169,10 @@ namespace DapperCRUDExample
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 153);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(23, 176);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 18);
             this.label3.TabIndex = 45;
@@ -175,7 +181,7 @@ namespace DapperCRUDExample
             // txtMovieTitle
             // 
             this.txtMovieTitle.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMovieTitle.Location = new System.Drawing.Point(116, 111);
+            this.txtMovieTitle.Location = new System.Drawing.Point(131, 134);
             this.txtMovieTitle.Name = "txtMovieTitle";
             this.txtMovieTitle.Size = new System.Drawing.Size(199, 26);
             this.txtMovieTitle.TabIndex = 44;
@@ -183,8 +189,10 @@ namespace DapperCRUDExample
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(8, 114);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(23, 137);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 18);
             this.label5.TabIndex = 43;
@@ -193,8 +201,10 @@ namespace DapperCRUDExample
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 260);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(23, 283);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 18);
             this.label4.TabIndex = 57;
@@ -203,8 +213,10 @@ namespace DapperCRUDExample
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(8, 295);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(23, 318);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 18);
             this.label6.TabIndex = 58;
@@ -213,7 +225,7 @@ namespace DapperCRUDExample
             // cmbxGenres
             // 
             this.cmbxGenres.FormattingEnabled = true;
-            this.cmbxGenres.Location = new System.Drawing.Point(116, 260);
+            this.cmbxGenres.Location = new System.Drawing.Point(131, 283);
             this.cmbxGenres.Name = "cmbxGenres";
             this.cmbxGenres.Size = new System.Drawing.Size(199, 21);
             this.cmbxGenres.TabIndex = 59;
@@ -221,7 +233,7 @@ namespace DapperCRUDExample
             // cmbxDirectors
             // 
             this.cmbxDirectors.FormattingEnabled = true;
-            this.cmbxDirectors.Location = new System.Drawing.Point(116, 292);
+            this.cmbxDirectors.Location = new System.Drawing.Point(131, 315);
             this.cmbxDirectors.Name = "cmbxDirectors";
             this.cmbxDirectors.Size = new System.Drawing.Size(199, 21);
             this.cmbxDirectors.TabIndex = 60;
@@ -231,7 +243,7 @@ namespace DapperCRUDExample
             this.btnGoToHome.BackgroundImage = global::DapperCRUDExample.Properties.Resources.homepage;
             this.btnGoToHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGoToHome.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGoToHome.Location = new System.Drawing.Point(738, 17);
+            this.btnGoToHome.Location = new System.Drawing.Point(758, 17);
             this.btnGoToHome.Name = "btnGoToHome";
             this.btnGoToHome.Size = new System.Drawing.Size(50, 50);
             this.btnGoToHome.TabIndex = 61;
@@ -241,8 +253,10 @@ namespace DapperCRUDExample
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(319, 17);
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(335, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(137, 23);
             this.label7.TabIndex = 62;
@@ -252,7 +266,8 @@ namespace DapperCRUDExample
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::DapperCRUDExample.Properties.Resources.blackbg;
+            this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnGoToHome);
             this.Controls.Add(this.cmbxDirectors);
@@ -275,7 +290,7 @@ namespace DapperCRUDExample
             this.Controls.Add(this.label5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManageMovies";
-            this.Text = "ManageMovies ";
+            this.Text = "Manage Movies ";
             this.Load += new System.EventHandler(this.ManageMovies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).EndInit();
             this.ResumeLayout(false);
