@@ -186,10 +186,19 @@ namespace DapperCRUDExample
         {
             string actorText = listbxActorFound.GetItemText(listbxActorFound.SelectedItem);
             string movieText = listbxMovieFound.GetItemText(listbxMovieFound.SelectedItem);
-            // last name ve title parametreleri alan stored procedure
-            DataAccessMovieActors db = new DataAccessMovieActors();
-            db.InsertMovieActors(listbxMovieFound.SelectedValue.ToString(), listbxActorFound.SelectedValue.ToString());
-            MessageBox.Show(actorText +" added to the " + movieText + " movie!");
+            try
+            {
+                // last name ve title parametreleri alan stored procedure
+                DataAccessMovieActors db = new DataAccessMovieActors();
+                db.InsertMovieActors(listbxMovieFound.SelectedValue.ToString(), listbxActorFound.SelectedValue.ToString());
+                MessageBox.Show(actorText + " added to the " + movieText + " movie!");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Dapper;
 
 namespace DapperCRUDExample
@@ -33,10 +34,14 @@ namespace DapperCRUDExample
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MovieDatabaseDB")))
             {
+
                 DynamicParameters param = new DynamicParameters();
                 param.Add("@Title", title);
                 param.Add("@LastName", lastName);
                 connection.Execute("MovieActors_InsertMovieAndActor", param, commandType: CommandType.StoredProcedure);
+
+
+
 
             }
         }

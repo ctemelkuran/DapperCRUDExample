@@ -240,7 +240,7 @@ namespace DapperCRUDExample
             this.Controls.Add(this.label5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SearchMovies";
-            this.Text = "Movie Search | MovieShelf";
+            this.Text = "Movie Search";
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

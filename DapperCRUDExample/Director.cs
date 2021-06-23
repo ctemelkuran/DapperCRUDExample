@@ -21,7 +21,7 @@ namespace DapperCRUDExample
                 return FirstName+ " " +LastName;
             }
         }
-        public int ActorAge
+        public int DirectorAge
         {
             get
             {
