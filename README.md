@@ -9,6 +9,10 @@ Implementation is relatively simple than Entity Framework and ADO.NET for a smal
 - Write a query to perform CRUD operations.
 - Pass query as a parameter in the Execute method.
 
+Queries can be called using stored procedures. Stored procedures are stored in the database and they save time and memory.
+Also, provides some level of protection for SQL injection. More information available on https://dapper-tutorial.net/. And I would like to thank [Tim Corey](https://www.iamtimcorey.com/) for his wonderful tutorials about database, [Dapper](https://www.youtube.com/watch?v=eKkh5Xm0OlU) and C# in general.
+
+
 ```csharp
   public List<Movie> GetMovie(string title)
   {
@@ -20,6 +24,18 @@ Implementation is relatively simple than Entity Framework and ADO.NET for a smal
       }
   }
 ```
+SQL queries can also executed with `connection.Execute(SQLQuery)` after connection is established.
+In this code block Dapper's [Query](https://dapper-tutorial.net/query) method is used to select id. And [Execute](https://dapper-tutorial.net/query) method is used to insert selected values.
+```c#
+string selectMovieId = "SELECT Id FROM Movies WHERE Title = '" + movieTitle + "';";
+var selectedMovieId = connection.Query<Movie>(selectMovieId).FirstOrDefault();
+
+string insertToMovieGenres = "INSERT INTO MovieGenres(MovieId, GenreId) VALUES ( "
+    + selectedMovieId.Id + "," + genreId + ");";
+
+connection.Execute(insertToMovieGenres);
+```
+
 --------------
 ### Movie Town Interface
 ![Home][homepage]
