@@ -9,6 +9,7 @@ Implementation is relatively simple than Entity Framework and ADO.NET for a smal
 - Write a query to perform CRUD operations.
 - Pass query as a parameter in the Execute method.
 
+```csharp
   public List<Movie> GetMovie(string title)
   {
       using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MovieDatabaseDB")))
@@ -18,7 +19,7 @@ Implementation is relatively simple than Entity Framework and ADO.NET for a smal
           return movieList;
       }
   }
-
+```
 --------------
 ### Movie Town Interface
 ![Home][homepage]
