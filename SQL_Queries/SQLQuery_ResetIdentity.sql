@@ -1,0 +1,2 @@
+DBCC CHECKIDENT ('Genres', RESEED, 0)
+GO
