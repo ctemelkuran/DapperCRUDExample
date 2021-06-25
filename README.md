@@ -9,7 +9,17 @@ Implementation is relatively simple than Entity Framework and ADO.NET for a smal
 - Write a query to perform CRUD operations.
 - Pass query as a parameter in the Execute method.
 
+  public List<Movie> GetMovie(string title)
+  {
+      using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MovieDatabaseDB")))
+      {
+          var movieList = connection.Query<Movie>("Movie_ViewAllOrSearchByTitle @Title",
+              new { Title = title }).ToList();
+          return movieList;
+      }
+  }
 
+--------------
 ### Movie Town Interface
 ![Home][homepage]
 ![ui][ui]
