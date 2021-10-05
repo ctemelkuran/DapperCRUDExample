@@ -41,5 +41,14 @@ connection.Execute(insertToMovieGenres);
 ![Home][homepage]
 ![ui][ui]
 
+### Schema Diagram
+
+![er-diagram][schema]
+
+
 [homepage]: images/MovieTown_Homepage.png "MovieTown_Homepage"
 [ui]: images/MovieTown_UI2.png "MovieTown_UI2"
+[schema]:images/Schema&#32;Diagram&#32;Movie&#32;Town.png "schema"
+
+
+
